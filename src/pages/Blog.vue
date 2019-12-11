@@ -37,6 +37,7 @@ query Posts($page: Int) {
 <script>
 import PostCard from '~/components/PostCard.vue'
 import { Pager } from 'gridsome'
+
 export default {
   components: {
     PostCard,
@@ -53,14 +54,17 @@ export default {
 <style lang="scss" scoped>
 .post-pager {
   text-align: center;
+
   a {
     margin-left: 1rem;
     font-size: 1.6rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
+
     &:first-child {
       margin-left: 0;
     }
+
     &.active {
       font-weight: 700;
       color: rgba(0, 0, 0, 1);
