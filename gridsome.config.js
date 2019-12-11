@@ -6,6 +6,12 @@
 
 module.exports = {
   siteName: 'Gridsome',
+
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id'
+  },
+
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -27,6 +33,13 @@ module.exports = {
           plugins: [
             // ...local plugins
           ]
+        },
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
         }
       }
     },
