@@ -1,7 +1,8 @@
 ---
 title: netlify-cms
+type: blog
 excerpt: netlify-cms
-cover: /uploads/logo-netlify.png
+cover: ''
 tags:
   - gridsome
   - netlify
