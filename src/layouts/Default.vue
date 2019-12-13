@@ -28,20 +28,37 @@ query {
 }
 </static-query>
 
+<script>
+import SideBar from '~/components/SideBar.vue'
+
+export default {
+  components: {
+    SideBar
+  }
+}
+</script>
+
 <style lang="scss">
 html {
+  height: 100%;
   font-size: 0.625rem;
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
 }
 
-.layout {}
+.layout {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 10rem;
+  min-height: 100%;
+}
 
 .header {
   position: relative;
@@ -81,6 +98,7 @@ body {
 .content {}
 
 .content-inner {
+  position: relative;
   margin: 0 auto;
   max-width: 80rem;
 }
@@ -89,7 +107,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
   font-size: 1.4rem;
 }
 </style>

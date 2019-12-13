@@ -2,11 +2,21 @@
   <Layout>
     <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" :isContent="true" />
     <Pager :info="$page.posts.pageInfo" class="post-pager" />
+    <SideBar :tags="$page.tags.edges" />
   </Layout>
 </template>
 
 <page-query>
 query Posts($page: Int) {
+  tags: allTag {
+    edges {
+      node {
+        id
+        title
+        path
+      }
+    }
+  }
   posts: allPost(perPage: 1, page: $page) @paginate {
     totalCount
     pageInfo {
@@ -36,11 +46,13 @@ query Posts($page: Int) {
 
 <script>
 import PostCard from '~/components/PostCard.vue'
+import SideBar from '~/components/SideBar.vue'
 import { Pager } from 'gridsome'
 
 export default {
   components: {
     PostCard,
+    SideBar,
     Pager
   },
   metaInfo() {
