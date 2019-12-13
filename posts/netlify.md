@@ -1,5 +1,6 @@
 ---
 title: netlify
+type: blog
 excerpt: netlify
 cover: /uploads/logo-netlify.png
 tags:
