@@ -13,12 +13,12 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Cover", name: "cover", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
       - label: "Type"
         name: "type"
         widget: "select"
         options: ["index", "timeline", "blog"]
+      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "Cover", name: "cover", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Body", name: "body", widget: "markdown"}
