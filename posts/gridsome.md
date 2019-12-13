@@ -1,7 +1,8 @@
 ---
 title: gridsome
+type: blog
 excerpt: gridsome
-cover: /uploads/logo-gridsome.png
+cover: ''
 tags:
   - gridsome
 date: 2019-12-09T08:08:34.343Z
