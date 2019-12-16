@@ -30,7 +30,9 @@ export default {
 
   a {
     display: block;
-    padding-left: 2rem;
+    margin-left: 2rem;
+    padding-left: 1.1rem;
+    text-indent: -1.1rem;
     color: rgba(0, 0, 0, 1);
   }
 }
