@@ -2,7 +2,7 @@
 title: netlify
 type: blog
 excerpt: netlify
-cover: /uploads/1_bh_n7msjvpvjrsyaqcakwg.png
+cover: ''
 tags:
   - gridsome
   - netlify
