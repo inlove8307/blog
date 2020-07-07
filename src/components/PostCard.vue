@@ -25,8 +25,9 @@ export default {
   overflow: hidden;
   position: relative;
   margin-bottom: 2rem;
+  border: 0.1rem solid rgba(230, 230, 230, 1);
   border-radius: 1rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 1rem rgba(245, 245, 245, 1);
   background-color: rgba(255, 255, 255, 1);
   list-style: none;
 }
@@ -38,7 +39,7 @@ export default {
   align-items: center;
   position: relative;
   height: 20rem;
-  background-color:rgba(0, 0, 0, 0.025);
+  background-color:rgba(252, 252, 252, 1);
 }
 .post-card-title {
   position: relative;
