@@ -6,7 +6,7 @@
           <g-link to="/">{{ $static.metadata.siteName }}</g-link>
         </h1>
         <nav class="header-menu">
-          <g-link to="/about/">About</g-link>
+          <!-- <g-link to="/about/">About</g-link> -->
           <g-link to="/blog/">Blog</g-link>
         </nav>
       </div>
@@ -77,7 +77,7 @@ body {
 .header-title {
   a {
     font-weight: 400;
-    font-size: 2.8rem;
+    font-size: 2rem;
     letter-spacing: -0.1rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
@@ -88,7 +88,7 @@ body {
   a {
     margin-left: 1rem;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: -0.1rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
